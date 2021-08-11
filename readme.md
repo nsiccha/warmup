@@ -65,8 +65,8 @@ and facilitates iterative model development by
 * firmly incorporating [prior, intermediate and posterior predictive checks](https://cran.r-project.org/web/packages/bayesplot/vignettes/graphical-ppcs.html) and
 * allowing user intervention at every step of the process.
 
-Warm-up wall time speedups *of a prototype* range from significant (+20%) to astonishing (+97%) as do
-improvements in warm-up computational efficiency (+50% to +99%) while generally not
+Reductions in warm-up wall time *of a prototype* range from significant (+20%) to astonishing (+97%) as do
+reductions in warm-up computational work (+50% to +99%) while generally not
 negatively impacting sampling performance and sometimes significantly
 improving sampling performance (-10% to +95%) as measured in the number
 of leapfrog steps (work) needed per [minimal estimated effective sample size](https://mc-stan.org/docs/2_27/cmdstan-guide/stansummary.html)
@@ -83,4 +83,4 @@ attempts to be analyzed by core developers of Stan and
 of Stan aimed at facilitating the "analysis of pharmacometric data", i.e.
 the analysis of hierarchical pharmacological ODE models) and
 * troubleshoot, improve and much more rapidly fit among other things epidemiological models,
-hierarchical biological models and [an approximate Gaussian Process models](https://github.com/nsiccha/birthday).
+hierarchical biological models and [approximate Gaussian Process models](https://github.com/nsiccha/birthday).
