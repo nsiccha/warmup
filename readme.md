@@ -3,7 +3,7 @@ is a/the state-of-the-art ecosystem for scalable high-performance Bayesian infer
 differentiable posteriors.
 Dynamic [Hamiltonian Monte Carlo (HMC)](https://en.wikipedia.org/wiki/Hamiltonian_Monte_Carlo)
 with its associated ([improved](https://arxiv.org/abs/1701.02434)) [No U-Turn Sampler (NUTS)](https://arxiv.org/abs/1111.4246)
-can scale ridiculously well to high-dimensional problems (thousands or more unknown parameters)
+can scale exceedingly well to high-dimensional problems (thousands or more unknown parameters)
 and has [several built-in diagnostics](https://mc-stan.org/docs/2_27/cmdstan-guide/diagnose.html)
 to monitor the quality of the obtained results.
 
@@ -44,12 +44,12 @@ to each of the three phases, which with default settings are
 
 where phase II is itself split into a series of windows which sequentially double in size.
 
-[Pathfinder (August 2021)](https://arxiv.org/abs/2108.03782) promises to alleviate some of the potential problems,
+The recently (August 2021) developed [Pathfinder](https://arxiv.org/abs/2108.03782) method promises to alleviate some of the potential problems,
 providing approximate draws from the posterior and a reasonable initialization for the covariance matrix
 at a fraction of the cost of Stan's default first warm-up phase
 while being trivially parallelizable and being able to recover from insignificant modes.
 
-We propose a new warm-up procedure, which
+In an orthogonal approach, we propose a new warm-up procedure, which
 
 * is generally computationally more efficient than Stan's current default,
 * automatically avoids insignificant modes,
