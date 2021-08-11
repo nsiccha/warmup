@@ -65,10 +65,10 @@ and facilitates iterative model development by
 * firmly incorporating [prior, intermediate and posterior predictive checks](https://cran.r-project.org/web/packages/bayesplot/vignettes/graphical-ppcs.html) and
 * allowing user intervention at every step of the process.
 
-Reductions in warm-up wall time *of a prototype* range from significant (+20%) to astonishing (+97%) as do
-reductions in warm-up computational work (+50% to +99%) while generally not
-negatively impacting sampling performance and sometimes significantly
-improving sampling performance (-10% to +95%) as measured in the number
+Reductions in warm-up wall time *of a prototype* range from significant (-20%) to astonishing (-97%) as do
+reductions in required warm-up computational work (-50% to -99%) while generally not
+negatively impacting sampling cost and sometimes extremely
+reducing sampling cost (+10% to -99%) as measured in the number
 of leapfrog steps (work) needed per [minimal estimated effective sample size](https://mc-stan.org/docs/2_27/cmdstan-guide/stansummary.html)
 (precision) for a [range of posteriors](https://github.com/stan-dev/posteriordb).
 
