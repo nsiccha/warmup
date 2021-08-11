@@ -15,7 +15,7 @@ an appropriate
 * ["metric"](https://mc-stan.org/docs/2_27/reference-manual/hamiltonian-monte-carlo.html#generating-transitions)
 used in sampling initial momenta at each Markov Chain (MC) transition,
 * [parametrization](https://mc-stan.org/docs/2_27/stan-users-guide/reparameterization-section.html) and
-* degree of [approximation](https://arxiv.org/abs/2004.11408) (not always but "often" applicable).
+* degree of [approximation](https://arxiv.org/abs/2004.11408) (not always but "often" applicable, especially for computationally expensive problems).
 
 Furthermore it is well-known that,
 while HMC is [asymptotically consistent](https://betanalpha.github.io/assets/case_studies/markov_chain_monte_carlo.html#1_hello_monte_carlo_our_old_friend),
